@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CHT">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="GPE聯盟鏈，立足於娛樂，為支付而生．">
+  <meta name="author" content="">
+
+  <title>GPE</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="./vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  
+  <!-- Custom styles for this template -->
+  <link href="./css/grayscalea.css" rel="stylesheet">
+
+
+  <link rel="icon" href="./img/gpe.ico" type="image/x-icon">
+  <!-- 粒子特效-->
+  <link rel="stylesheet" media="screen" href="./css/style.css">
+  
+  <style>
+    #question .card{margin:20px;}
+    #question .card:hover{box-shadow: 5px 5px 10px #a8c9c9;}
+    #question .card button{border-top:3px solid rgb(22, 90, 73);}
+  </style>
+</head>
+
+<body id="page-top" onload="startGame()">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">GPE</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">關於我們</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#skill">技術特點</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#news">最新消息</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#wallet">錢包</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#question">常見問題</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#signup">聯絡我們</a>
+              </li>
+              <li class="nav-item dropdown" style="width:50px;">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    語系
+                  </a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="./index.html">繁中</a>
+                      <a class="dropdown-item" href="./index_zh-CHS.html">簡中</a>
+                      <a class="dropdown-item" href="./index_en.html">English</a>
+                    </div>
+              </li>
+    
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+  <!-- 加上粒子特效 header -->
+  <header  id="particles-js" class="particles" style="width:100%;height:auto;opacity: 0.8;">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="col-md-9 col-md-offset-9 mx-auto">
+        <div id="FirstSection" class="login-wrapper" style="margin-top:8rem;">
+          <h1 class="login_title text-uppercase mx-auto"><br/>GPE聯盟鏈</h1>
+          <h2 class="login_title text-white-50 mx-auto mt-2 mb-5">立足於娛樂，為支付而生</h2>
+        </div>
+        <div style="width:100%;height:100px;"></div>
+      </div>
+    </div>
+  
+  </header>
+
+
+   <!-- skill Section -->
+   <section id="skill" class="skill text-center" >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-white my-2">技術特點</h2>
+            <!--<p class="text-white-50">敘述</p>-->
+          </div>
+        </div>
+        <img src="./img/mind.jpeg" class="img-fluid m-5" alt="" style="width:80%;height:auto;">
+        <!--RWD網格-->
+        <div class="container-fluid p-4 m-2 mx-auto bg-light" style="border:1 solid green;">
+          <div class="row align-items-center justify-content-center ">
+            <div class="col-md-1 bg-light text-primary "><i class='fas fa-vector-square' style='font-size:20px;color:#00AAAA;padding:5% 10% 5% 10%;margin-left:2px;'></i> </div>
+            <div class="col-md-2 bg-light text-primary shadow"><h3>性能</h3></div>
+            <div class="col-md-9 bg-light text-muted">GPE聯盟鏈採用DPOS共識機制，將出塊速度提升到5秒/塊，可達百萬級TPS的交易速度</div>
+          </div>  
+        </div>
+        <div class="container-fluid p-4 m-2 mx-auto bg-light" style="border:1 solid green;">
+          <div class="row align-items-center justify-content-center ">
+            <div class="col-md-1 bg-light text-primary"><i class='fas fa-cog' style='font-size:20px;color:#00AAAA;padding:5% 10% 5% 10%;'></i></div>
+            <div class="col-md-2 bg-light text-primary shadow"><h3>效率</h3></div>
+            <div class="col-md-9 bg-light text-muted">GPE聯盟鏈智能合約相容於EOS鏈，為目前最多開發者使用的Dapp執行環境，可以達到無痛轉移與快速上線使用</div>
+          </div>  
+        </div>
+        <div class="container-fluid p-4 m-2 mx-auto bg-light" style="border:1 solid green;">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-1 bg-light text-primary"><i class='fas fa-exclamation-triangle' style='font-size:20px;color:#00AAAA;padding:5% 10% 5% 10%;'></i></div>
+            <div class="col-md-2 bg-light text-primary shadow"><h3>安全</h3></div>
+            <div class="col-md-9 bg-light text-muted">GPE聯盟鏈與所有的區塊鏈系統一致，採用分散式帳本管理技術，並透過節點間自主數據比對同步機制，確保數據不會被篡改</div>
+          </div>  
+        </div>
+        <div class="container-fluid p-4 m-2 mx-auto bg-light" style="border:1 solid green;">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-1 bg-light text-primary"><i class='fas fa-layer-group' style='font-size:20px;color:#00AAAA;padding:5% 10% 5% 10%;'></i></div>
+            <div class="col-md-2 bg-light text-primary shadow"><h3>可信</h3></div>
+            <div class="col-md-9 bg-light text-muted">GPE聯盟鏈基於公開透明的交易帳本記錄與DPOS共識機制，徹底杜絕黑箱交易與高效交易，符合支付運營之需求</div>
+          </div>  
+        </div>
+        <div><br/></div>
+  
+        
+      </div>
+    </section>
+
+
+
+    <!--最新消息-->
+    <section id="news" class="news-section bg-light text-center">
+      <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <h2 class="text-dark my-2">相關消息</h2>
+              </div>
+            </div>
+            <!--album-->
+            <div class="album py-5 bg-light">
+              <div class="container">
+      
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top" src="https://ichef.bbci.co.uk/news/624/cpsprodpb/0BD8/production/_107423030_34c093fe-23af-480f-8424-7e28d7902e4a.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h3><a class="text-dark" href="https://www.bbc.com/news/technology-48667525">Facebook Libra幣的創投提案將成為金錢的未來</a></h3>
+                        <div class="mb-1 text-muted">2019 Oct 24</div>
+                        <p class="card-text">社群媒體如何希望克服信任的議題而使人們願意使用他們的加密貨幣?</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">閱讀更多</button>  
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top" src="https://ichef.bbci.co.uk/news/624/cpsprodpb/16A16/production/_107349629_coin.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h3><a class="text-dark" href="https://www.bbc.com/news/business-48526666">區塊鏈對世界經濟有多重要？</a></h3>
+                        <div class="mb-1 text-muted">2019 July 3</div>
+                        <p class="card-text">區塊鏈被大肆宣傳，但是真的可以和互聯網同具相同的重要性與破壞性嗎?</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">閱讀更多</button>  
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top" src="https://www.disruptordaily.com/wp-content/uploads/2018/11/Accelerated-Simplified-Card-Network-Payments-768x384.png" alt="Card image cap">
+                      <div class="card-body">
+                          <h3><a class="text-dark" href="https://www.disruptordaily.com/blockchain-use-cases-ecommerce/">區塊鏈在電子商務上 12項可能的應用</a></h3>
+                          <div class="mb-1 text-muted">2018 Dec 4</div>
+                          <p class="card-text">區塊鏈提供了更高的安全性和匿名性，基於該技術構建的電子零售平台提供了許多對消費者的保護措施。</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">閱讀更多</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="align-middle p-4">
+                      <a href="#about" class="btn btn-outline-secondary js-scroll-trigger">更多資訊</a>
+                  </div>
+
+              </div>
+            </div>
+              <!--album end-->
+        </div>
+      </section>
+
+  
+
+
+<!-- Devop -->
+  <section id="devop" class="dev" style="background-color:#007799;">
+    <div class="container d-flex h-100 align-items-center" >
+      <div class="mx-auto text-center">
+
+        <h1 class="mx-auto my-0 text-uppercase">構建</h1>
+        <h2 class="text-white-50 mx-auto mt-5 mb-5">GPE是為開發人員而設計的，其新功能使其可以更快，更簡單，甚至更安全地在GPE上進行構建。</h2>
+        <svg id="leftcircle" height="100" width="100">
+          <circle cx="50" cy="50" r="10" stroke="white" stroke-width="3" fill="white" />
+          Sorry, your browser does not support inline SVG.  
+        </svg> 
+        
+        <a href="#about" class="btn btn-primary js-scroll-trigger">For dev</a>  
+ 
+        <svg height="100" width="100">
+          <defs>
+            <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+              <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+              <stop offset="100%" style="stop-color:rgb(204, 247, 247);stop-opacity:1" />
+            </radialGradient>
+          </defs>
+          <ellipse cx="50" cy="50" rx="12" ry="12" fill="url(#grad1)" />
+          Sorry, your browser does not support inline SVG.
+        </svg>
+    </div>
+  </section>
+
+
+ <!-- wallet Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid mt-0" style="width:70%;height:auto;margin:15%;border-radius:25px;" src="./img/gpe_wallet.jpg" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h1 class="text-light">Wallet</h1>
+                <h3 class="mb-3 mt-3 text-light">投資和存儲數字資產最安全、最受歡迎的錢包</h3>
+                <a href="https://gpe-blackchain.github.io/gpeksjaf/" class="btn js-scroll-trigger m-2" style="background-color:rgb(228, 213, 190);opacity: 0.8;" target="_new">APP 安裝</a>
+                <a href="https://play.google.com/store/apps/details?id=com.gpe.gpewallet" class="btn js-scroll-trigger m-2" style="background-color:rgb(228, 213, 190);opacity: 0.8;" target="_new">Google Play 安裝</a>
+                <!--<hr class="d-none d-lg-block mb-0 mr-0">-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Question Section -->  
+  <section id="question" class="question bg-light" style="background-image: radial-gradient(closest-corner at 30% 40%, rgba(22, 90, 73, 0.7), rgba(19,57,55,1));">
+      <h3 class="container">
+        <div class="row">
+            <div class="mx-auto">
+              <h2 class="text-white mb-5">常見問題</h2>
+            </div>
+        </div>
+          <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h4 class="mb-0">
+                    <button style="border-left:3px solid rgb(22, 90, 73);" class="btn btn-outline-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        理念介紹
+                    </button>
+                  </h4>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body lead">
+                        
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h4 class="mb-0">
+                    <button style="border-left:3px solid rgb(22, 90, 73);" class="btn btn-outline-secondary collapsed " type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        為什麼要在 GPE 上構建？
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body lead">
+                      GPE 是專為現實世界設計的區塊鏈平台，為聯盟鏈，具有豐富的基於角色的安全權限，行業領先的速度和安全的應用程序處理能力，可進行自定義以滿足各種行業的廣泛業務需求。在 GPE 上進行構建遵循現有開發人員使用的熟悉的開發模式和編程語言。
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h4 class="mb-0">
+                    <button class="btn btn-outline-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        什麼是區塊鏈？
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body lead">
+                      人們以不同的方式描述區塊鏈技術，但從本質上講，區塊鏈是一種公共數字分類帳，它以可公開驗證和加密安全的方式記錄給定網絡內的所有交易。
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h4 class="mb-0">
+                    <button style="border-right:3px solid rgb(22, 90, 73);" class="btn btn-outline-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    什麼是聯盟鏈？
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body lead">
+                    聯盟鏈（Consortium Blockchain）為私鏈的一種，最大的不同在於私鏈主要稱為億個公司的單一服務，而聯盟鏈主要聚焦於一個多家公司組織與產業之間的服務。
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h4 class="mb-0">
+                    <button style="border-right:3px solid rgb(22, 90, 73);" class="btn btn-outline-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      企業該選擇哪種鏈？ —— 公有鏈 vs. 私有鏈 vs. 聯盟鏈
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body lead">
+                    鏈的治理與參與者的能見透明度，該怎麼去制定會根據採用者的需求不同而有所權衡。
+                    <div class="mt-3"><a href="https://www.blocktempo.com/which-blockchain-analysis/" class="btn btn-outline-secondary js-scroll-trigger">閱讀更多</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="align-middle p-4">
+              <h3><a href="#" class="btn btn-outline-light js-scroll-trigger">更多問題</a><h3>
+            </div>
+      </div>
+  </section>
+
+  <!-- Signup Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">電子郵件訂閱以得到更多資訊</h2>
+
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="請輸入電子郵件地址...">
+            <button type="submit" class="btn btn-primary mx-auto">訂閱</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
+      <div class="row">
+        <h3 style="color:white;text-align:center;margin:30px;">聯絡我們</h3>
+      </div>
+        <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">地址</h4>
+              <hr class="my-4">
+              <div class="small text-black-50"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">電子信箱</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="#"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">電話</h4>
+              <hr class="my-4">
+              <div class="small text-black-50"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        <a href="#" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+          <!--客服信箱:-->
+    </div>
+    <br/>
+    <div class="container">
+      版權所有 &copy;  gpayeasy.com 2020
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="./js/grayscale.min.js"></script>
+
+  <!-- 粒子特效 scripts -->
+  <script src="./js/particles.js"></script>
+  <!--<script src="./js/particles.min.js"></script>-->
+  <script src="./js/app.js"></script>
+
+ </body>
+
+</html>
